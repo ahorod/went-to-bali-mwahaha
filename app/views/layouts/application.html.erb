@@ -9,6 +9,7 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   </head>
+  <% if !@remove_navbar %>
   <nav>
     <div class="nav-wrapper">
       <ul id="nav-mobile" class="right hide-on-med-and-down">
@@ -24,6 +25,7 @@
       </ul>
     </div>
   </nav>
+  <% end %>
 
   <body>
     <% flash.each do |name, msg| %>

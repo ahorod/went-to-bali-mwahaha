@@ -1,0 +1,9 @@
+var url = '<%= product_path @product %>';
+
+$("#dialog_iframe").attr("src", url);
+$("#dialog").dialog({
+  modal: true,
+  width: "auto",
+  height: "auto"
+}
+);
